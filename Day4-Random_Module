@@ -1,0 +1,11 @@
+import random
+
+random_integer_number = random.randint(1, 10)             // gives any integer number
+print(random_integer_number)
+
+random_float_number = random.random()                    // gives any float number between 0.0 - 1.0 except 1.0
+print(random_float_number)
+
+# to expand the range of random floating point numbers after 1.0, we can multiply the random float number with 5 or any other number like below example
+print(random_float_number * 5)
+
