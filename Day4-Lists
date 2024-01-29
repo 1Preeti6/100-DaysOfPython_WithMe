@@ -1,0 +1,7 @@
+states_of_india = ["jammu-kashmir" , "leh-ladakh" , "himachal-pradesh" , "punjab" , "haryana" , "uttrakhand" , "uttar-pradesh", "rajasthan" , "madhya-pradesh" , "chattisgarh" , "bihar" , "west-bengal" , "assam" , "nagaland"]
+print(states_of_india)
+
+states_of_india[0] = "J&K"
+print(states_of_india)
+
+print(states_of_india[4], states_of_india[-1])
