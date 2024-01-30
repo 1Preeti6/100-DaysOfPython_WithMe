@@ -1,0 +1,89 @@
+import random
+
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+
+// user's choice
+user_choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper and 2 for SCissors.\n"))
+                  
+if (user_choice == 0):
+    print(rock)
+elif (user_choice == 1):
+    print(paper)
+elif (user_choice == 2):
+    print(scissors)
+else:
+    print("Invalid input.")
+
+// computer's choice 
+print("Computer choose: ")
+computer_choice = random.randint(0,2)
+print(computer_choice)
+
+if (computer_choice == 0):
+    print(rock)
+elif (computer_choice == 1):
+    print(paper)
+elif (computer_choice == 2):
+    print(scissors)
+else:
+    print("Invalid input.")
+    
+// Rock = 0 --> rock wins over scissors
+// Ppaer = 1 --> paper wins over rock
+// Scissors = 2 --> scissors wins over paper
+if (user_choice == 0):
+    
+    if (computer_choice == 0):
+        print("Game tie.")
+    elif (computer_choice == 1):
+        print("Yayy!!! Computer win.")
+    elif (computer_choice == 2):
+        print("Wohoo!!! You win.")
+        
+elif (user_choice == 1):
+    
+    if (computer_choice == 0):
+        print("Wohoo!!! You win.")
+    elif (computer_choice == 1):
+        print("Game tie.")
+    elif (computer_choice == 2):
+        print("Yayy!!! Computer win.")
+        
+elif (user_choice == 2):
+    
+    if (computer_choice == 0):
+        print("Yayy!!! Computer win.")
+    elif (computer_choice == 1):
+        print("Wohoo!!! You win.")
+    elif (computer_choice == 2):
+        print("Game tie.")
+        
+else:
+    print("Invalid user input.")
+    
+
