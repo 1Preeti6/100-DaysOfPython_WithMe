@@ -1,0 +1,10 @@
+BASICS /* 
+fruits = ["Apple" , "Pear" , "Peach" , "Strawberry"]
+
+for i in fruits:
+    print(i)
+    print(f"I like {i} pie.")
+
+print(fruits)
+
+*/ BASICS
