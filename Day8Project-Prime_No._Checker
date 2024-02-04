@@ -1,0 +1,26 @@
+# Write your code below this line 👇
+
+----- // 1. Easy way for less numbers: ---------------
+def prime_checker(number):
+  if (number == 2):
+    print("It's a prime number.")
+  elif (number % 2 == 0 or number % 3 == 0 or number % 5 == 0):
+    print("It's not a prime number.")
+  else:
+    print("It's a prime number.")
+
+----- // 2. Actual way of checking prime numbers: --------
+def prime_checker(number):
+    for i in range(2, number):
+        if (number % i == 0):
+            print("It's not a prime number.")
+            break
+    else:
+        print("it's a prime number.")
+
+
+# Write your code above this line 👆
+   
+#Do NOT change any of the code below👇
+n = int(input()) # Check this number
+prime_checker(number=n)
